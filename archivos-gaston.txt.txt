@@ -1,0 +1,8 @@
+<?php
+
+echo "vamos a mostrar 10 veces lo mismo";
+
+$i = 0;
+for(;$i < 10; $i++)
+	echo"lo mostramos, ";
+¿>
