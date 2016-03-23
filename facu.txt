@@ -1,8 +1,12 @@
 <?php
- te va a caber 
+
+=======
+echo "gaston";
+
 $i=0;
 
 for ($i=0 ; $i<10; $i++){
-	echo $i . "  ";
+	echo ($i + 3) . "  ";
 }
+echo "esto es una prueba en clase";
 ?>
