@@ -12,3 +12,9 @@ background-image:url(paisaje.jpg);
 background-repeat:repeat-y;
 /*--background-repeat:repeat-x -- repite la imagen en el eje x*/
 }
+.list_pers{
+  color:green;
+}
+.nosub{
+  text-decoration:none;
+}
