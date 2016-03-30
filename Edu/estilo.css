@@ -5,5 +5,8 @@ color:blue;
 color:green;
 }
 body{
-background-color: red;
+/*background-color: #D6DBA8;*/
+background-image: url(5.png);
+background-repeat: no-repeat;
+
 }
