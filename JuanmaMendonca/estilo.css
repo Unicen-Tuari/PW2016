@@ -19,3 +19,11 @@ ul{
 ol{
 	color: yellow;
 }
+div{
+	background-color:pink;
+	border-style: solid;
+}
+span{
+	font-weight: bold;
+	color: green;
+}
