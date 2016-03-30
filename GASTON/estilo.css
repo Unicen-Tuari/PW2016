@@ -16,6 +16,23 @@ p{
   border-style: ridge;
 }
 
+thead {
+  color: violet;
+}
+tbody{
+  color: white;
+}
+td {
+  color: white;
+}
+table{
+  background-image:url(http://cdn01.ib.infobae.com/adjuntos/162/imagenes/000/688/0000688066.jpg) ;
+}
+
+table, th, td{
+  border: 2px solid green;
+}
+
 span{
   font-style: italic;
   font-size: 35px;
