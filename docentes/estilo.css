@@ -1,0 +1,17 @@
+p {
+  color:red;
+}
+
+.classverde
+{
+  color: green;
+}
+
+ol
+{
+    list-style-type: armenian;
+}
+
+li a {
+  text-decoration: none;
+}
