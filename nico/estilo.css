@@ -14,3 +14,9 @@ body{
 a:link{
   text-decoration: none;
 }
+
+.Bloque1{
+  background-color: yellow;
+  border-color: red;
+  border-style: solid;
+}
