@@ -8,3 +8,14 @@ body {
   background-image:url(bamboo-fondo.jpg);
   background-repeat:repeat;
 }
+.italic{
+  font-style: italic;
+}
+
+.large{
+  font-size: xx-large;
+}
+
+.LinkSinSub{
+  text-decoration: none;
+}
