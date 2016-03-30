@@ -15,13 +15,19 @@ text-decoration: none;
 }
 
 .titulo{
+width:100%;
 border-style: solid;
 background-color: red;
 text-align: center;
 }
 
-.primer_articulo{
+div{
 height: 50%;
 width: 50%;
-justify-content: space-between;
+text-align: justify;
+}
+
+span{
+background-color: red;
+font-size: large;
 }
