@@ -9,7 +9,7 @@ p{
 }
 .nolinealink
 {
- text-decoration:none;
+  text-decoration:none;
 }
 .classfondodiv{
   background-color: yellow;
@@ -23,7 +23,7 @@ tbody{
   color: white;
 }
 td {
-  color: white;
+  color: orange;
 }
 table{
   background-image:url(http://cdn01.ib.infobae.com/adjuntos/162/imagenes/000/688/0000688066.jpg) ;
@@ -44,4 +44,7 @@ body{
 }
 h1{
   text-align: center;
+}
+form{
+  color: orange;
 }
