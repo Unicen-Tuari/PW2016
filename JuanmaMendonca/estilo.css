@@ -1,0 +1,21 @@
+p{
+color: red;
+font-family: "Times New Roman",Times,serif;
+}
+.classblue{
+color:blue;
+}
+body{
+	background-color: green;
+	background-image: url(13.jpg);
+	/*background-repeat: repeat;*/
+}
+a{
+ text-decoration:none;
+}
+ul{
+	color: aqua;
+}
+ol{
+	color: yellow;
+}

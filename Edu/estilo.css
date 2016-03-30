@@ -1,0 +1,58 @@
+p{
+color:blue;
+}
+.verde{
+color:green;
+}
+body{
+background-color: #D6DBA8;
+/*background-image: url(5.png);
+background-repeat: repeat-X ;*/
+}
+
+.LINK{
+text-decoration: none;
+}
+
+.titulo{
+width:100%;
+border-style: solid;
+background-color: red;
+text-align: center;
+}
+
+div{
+height: 50%;
+width: 50%;
+text-align: justify;
+}
+
+span{
+background-color: red;
+font-size: large;
+}
+
+table {
+margin: 45px;
+width: 480px;
+}
+
+th {
+font-size: 23px;
+padding: 8px;
+background: red;
+}
+
+td {
+padding: 8px;
+background: pink;
+color: green;
+}
+
+caption{
+background: blue;
+}
+
+.formulario{
+  text-decoration: none;
+}
