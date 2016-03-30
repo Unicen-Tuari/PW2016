@@ -5,7 +5,7 @@ p{
   color:green;
 }
 body{
-   background-color:red;
+   background-color:yellow;
 }
 body {
 background-image:url(paisaje.jpg);
@@ -17,4 +17,22 @@ background-repeat:repeat-y;
 }
 .nosub{
   text-decoration:none;
+}
+span{
+  color: green;
+  font-weight: bold;
+  font-style: italic;
+}
+.bloque1{
+  background-color:red;
+  color: black;
+  border-style: solid;
+
+}
+.masgrande{
+  color: green;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+
 }
