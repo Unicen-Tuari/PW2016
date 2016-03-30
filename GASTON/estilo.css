@@ -7,6 +7,19 @@ p{
 .claserojo{
   color:red;
 }
+.nolinealink
+{
+ text-decoration:none;
+}
+.classfondodiv{
+  background-color: yellow;
+  border-style: ridge;
+}
+
+span{
+  font-style: italic;
+  font-size: 35px;
+}
 
 body{
   background-image:url(http://k42.kn3.net/taringa/1/2/0/1/2/9/69/luksqk26/BF7.jpg?5142);
@@ -14,9 +27,4 @@ body{
 }
 h1{
   text-align: center;
-}
-
-.nolinealink   
-{
- text-decoration:none;
 }
