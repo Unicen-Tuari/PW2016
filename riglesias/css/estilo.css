@@ -77,3 +77,8 @@ th{
   background-color: green;
   color:white;
 }
+
+ul li{
+  color: black;
+  height: 60px;
+}
