@@ -26,18 +26,25 @@ a{
 
 div.noticia{
   background-color: orange;
-  border-color: cyan;
+  border-color: white;
+  border-style:solid;
+  border-width: 20px;
 }
 
 div.noticia_b{
   background-color: cyan;
   border-color: grey;
+  border-style:solid;
+  border-width: 20px;
 
 }
 
-div{
-  border-style:solid;
+
+
+div.tablita{
   border-width: 20px;
+  border-color: transparent;
+  border-style:solid;
 }
 
 .txt_negrita{
@@ -46,4 +53,27 @@ div{
 
 span{
   font-weight: bold;
+}
+
+table, th, td{
+  border: 1px solid grey;
+}
+
+td{
+  width:200px;
+}
+
+tfoot{
+  color:red;
+  font-weight: bold;
+}
+
+table{
+  background-color: white;
+  text-align: center;
+}
+
+th{
+  background-color: green;
+  color:white;
 }
