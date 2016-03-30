@@ -33,3 +33,22 @@ span{
     font-style: normal;
     font-size: 20px;
 }
+
+table, td, tr {
+  border: 5px dotted;
+}
+td, tr{
+  border-color: red;
+}
+
+table{
+  border-color: blue;
+}
+
+tbody{
+  background-color: grey;
+}
+
+thead{
+  background-color: orange;
+}
