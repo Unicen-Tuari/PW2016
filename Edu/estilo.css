@@ -5,13 +5,23 @@ color:blue;
 color:green;
 }
 body{
-/*background-color: #D6DBA8;*/
-background-image: url(5.png);
-background-repeat: repeat-X;
-
-
+background-color: #D6DBA8;
+/*background-image: url(5.png);
+background-repeat: repeat-X ;*/
 }
 
 .LINK{
 text-decoration: none;
+}
+
+.titulo{
+border-style: solid;
+background-color: red;
+text-align: center;
+}
+
+.primer_articulo{
+height: 50%;
+width: 50%;
+justify-content: space-between;
 }
