@@ -1,0 +1,25 @@
+p{
+  color: black;
+  font-family: 'Arial', sans-serif;
+}
+
+.verde{
+  color: green;
+}
+
+body{
+  background-image: url(../img/bg.png);
+  background-repeat:round;
+}
+
+ol{
+  color:green;
+}
+
+ul{
+  color:blue;
+}
+
+a{
+  text-decoration: none;
+}
