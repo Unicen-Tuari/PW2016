@@ -1,8 +1,8 @@
 p{
   color:red;
 }
-.classVerde{
-  color:green;
+.classAzul{
+  color:blue;
 }
 body {
   background-image:url(bamboo-fondo.jpg);
@@ -18,4 +18,13 @@ body {
 
 .LinkSinSub{
   text-decoration: none;
+}
+.Tabla{
+  background-color: yellow;
+  border-style: solid;
+}
+.Remarcador{
+  font-style: italic;
+  font-weight: bold;
+  color: black;
 }
