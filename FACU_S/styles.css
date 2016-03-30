@@ -28,3 +28,13 @@ body {
   font-weight: bold;
   color: black;
 }
+table{
+  background-color: grey;
+  text-align: center;
+}
+th{
+  color : violet;
+}
+td,table,th{
+  border:1px solid black;
+}
