@@ -15,3 +15,21 @@ ol
 li a {
   text-decoration: none;
 }
+
+div {
+  background-color: green;
+}
+
+.super-parrafos{
+  border-style: dotted;
+}
+span{
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
+
+.sin-italica{
+    font-style: normal;
+    font-size: 20px;
+}
