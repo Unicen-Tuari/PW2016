@@ -31,3 +31,28 @@ span{
 background-color: red;
 font-size: large;
 }
+
+table {
+font-size: 12px;
+margin: 45px;
+width: 480px;
+text-align: left;
+
+}
+
+th {
+font-size: 13px;
+font-weight: normal;
+padding: 8px;
+background: red;
+}
+
+td {
+padding: 8px;
+background: pink;
+color: #669;
+}
+
+caption{
+background: blue;
+}
