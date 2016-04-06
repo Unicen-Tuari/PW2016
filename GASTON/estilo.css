@@ -1,6 +1,11 @@
 p{
   color:violet;
 }
+p::first-letter {
+color: #ffffff;
+font-size: 25px ;
+}
+
 .claseverde{
   color:green;
 }
@@ -39,9 +44,25 @@ span{
 }
 
 body{
-  background-image:url(http://k42.kn3.net/taringa/1/2/0/1/2/9/69/luksqk26/BF7.jpg?5142);
+  background-image:url(http://www.elandroidelibre.com/wp-content/uploads/2013/06/Android-wall.jpg);
   background-repeat:repeat;
 }
+
+a::link{
+  color:orange;
+}
+a::selection{
+  font-size: 70px;
+}
+a:hover {
+  font-size: 70px;
+}
+
+.claseverde::selection{
+  background-color: #cccccc;
+  font-size: 70px;
+}
+
 h1{
   text-align: center;
 }
