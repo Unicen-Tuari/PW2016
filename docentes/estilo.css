@@ -2,6 +2,11 @@ p {
   color:red;
 }
 
+/*p:first-letter{
+    background-color: #000000;
+    font-size:30px;
+}*/
+
 .classverde
 {
   color: green;
@@ -51,4 +56,29 @@ tbody{
 
 thead{
   background-color: orange;
+}
+
+a:link{
+  color: #aa0033;
+}
+
+a:visited{
+  color: #aa0033;
+}
+
+a:hover{
+  color: #FF0055;
+}
+a:active{
+  color: #00FF00;
+}
+
+.classverde::selection{
+  background-color: #cccccc;
+  color: red;
+}
+
+p:first-letter{
+  color: orange;
+  font-size: 30px;
 }
