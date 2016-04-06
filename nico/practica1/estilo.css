@@ -86,3 +86,7 @@ tbody{
 thead{
   background-color: orange;
 }
+
+form{
+  white-space: pre-wrap;
+}
