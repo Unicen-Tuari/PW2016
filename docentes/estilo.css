@@ -59,15 +59,15 @@ thead{
 }
 
 a:link{
-  color: #aa0033;
+  color: #FF0000;
 }
 
 a:visited{
-  color: #aa0033;
+  color: #FF0000;
 }
 
 a:hover{
-  color: #FF0055;
+  color: #FFFF00;
 }
 a:active{
   color: #00FF00;
@@ -81,4 +81,16 @@ a:active{
 p:first-letter{
   color: orange;
   font-size: 30px;
+}
+
+.botonera > p {
+  background-color: green;
+}
+
+#link-exactas ~ p{
+  background-color: white;
+}
+
+.link-interno{
+  background-color: red;
 }
