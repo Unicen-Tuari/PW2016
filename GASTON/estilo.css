@@ -1,22 +1,71 @@
 p{
   color:violet;
 }
+p::first-letter {
+color: #ffffff;
+font-size: 25px ;
+}
+
 .claseverde{
   color:green;
 }
 .claserojo{
   color:red;
 }
+.nolinealink
+{
+  text-decoration:none;
+}
+.classfondodiv{
+  background-color: yellow;
+  border-style: ridge;
+}
+
+thead {
+  color: violet;
+}
+tbody{
+  color: white;
+}
+td {
+  color: orange;
+}
+table{
+  background-image:url(http://cdn01.ib.infobae.com/adjuntos/162/imagenes/000/688/0000688066.jpg) ;
+}
+
+table, th, td{
+  border: 2px solid green;
+}
+
+span{
+  font-style: italic;
+  font-size: 35px;
+}
 
 body{
-  background-image:url(http://k42.kn3.net/taringa/1/2/0/1/2/9/69/luksqk26/BF7.jpg?5142);
+  background-image:url(http://www.elandroidelibre.com/wp-content/uploads/2013/06/Android-wall.jpg);
   background-repeat:repeat;
 }
+
+a::link{
+  color:orange;
+}
+a::selection{
+  font-size: 70px;
+}
+a:hover {
+  font-size: 70px;
+}
+
+.claseverde::selection{
+  background-color: #cccccc;
+  font-size: 70px;
+}
+
 h1{
   text-align: center;
 }
-
-.nolinealink   
-{
- text-decoration:none;
+form{
+  color: orange;
 }
