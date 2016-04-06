@@ -1,0 +1,70 @@
+p{
+  color: red;
+}
+
+a:hover{
+  background-color: white;
+  color: pink;
+}
+
+a:selection {
+  color: green;
+  background-color: black;
+}
+a:link{
+  color:orange;
+}
+a:visited{
+  color: pink;
+}
+
+p::first-letter {
+  color: orange;
+  font-size: 20px;
+}
+
+.verde
+{
+  color: green;
+}
+
+body{
+  background-image: url(wallpaper.jpg);
+}
+
+ul {
+  list-style-image: url(mario.jpg);
+}
+
+.clasediv{
+  background-color: white;
+  color: red
+}
+
+.clasediv:selection {
+  background-color: red;
+  color: red;
+}
+
+.classspan{
+  font-style: italic;
+  color: blue;
+}
+table{
+  width: 300px;
+  background-color: white;
+}
+thead{
+  color: blue;
+}
+tfoot{
+  color: red;
+}
+
+table, th, td{
+  border: 2px solid orange;
+}
+
+form{
+  white-space: pre-wrap;
+}
