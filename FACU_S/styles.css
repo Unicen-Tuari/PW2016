@@ -39,3 +39,24 @@ th{
 td,table,th{
   border:1px solid black;
 }
+
+a:link {
+   color: orange;
+}
+a:visited {
+   color: grey;
+}
+a:hover {
+  font-size: 30px;
+  color: red;
+}
+p::selection{
+  color: blue;
+}
+p::first-letter{
+  color: orange;
+  font-size: 30px;
+}
+.classAzul::selection{
+  background-color: #CCCCCC;
+}
