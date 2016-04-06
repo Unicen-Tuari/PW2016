@@ -39,3 +39,16 @@ tfoot{
 table, th, td{
 	border: 1px solid black;
 }
+a:link{
+	text-decoration:none;
+	color:orange;
+}
+a:visited{
+	color:#aa0033;
+}
+a:hover{
+	color:#ff0055;
+}
+.greenselection::selection{
+	color:violet;
+}
