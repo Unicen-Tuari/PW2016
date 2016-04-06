@@ -1,0 +1,92 @@
+/*p{
+  color:red;
+}*/
+
+.verde {
+  color: blue;
+}
+
+.greenselection::selection{
+  color:green;
+}
+
+body{
+ background-color:white;
+/*background-image:url("http://www.exa.unicen.edu.ar/es/system/files/banners/fondoseccion.jpg");*/
+}
+
+a:link{
+  text-decoration: none;
+  color:orange;
+}
+
+
+a:visited{
+ background-color: orange;
+ color:orange;
+}
+
+a:hover{
+  font-size: 30px;
+}
+
+a::selection{
+  background-color: red;
+  color:red;
+}
+
+a:active{
+  color:red;
+  background-color: black;
+}
+
+p:first{
+  background-color: #101010;
+  color:yellow;
+}
+
+p::first-letter{
+  background-color: black;
+  color: red;
+}
+
+.Bloque1{
+  background-color: yellow;
+  border-color: red;
+  border-style: solid;
+}
+
+div{
+  font-style: italic;
+  color:violet;
+  font-weight: bold;
+}
+
+.sincursiva{
+ font-size: 21px;
+ font-style: normal;
+ color:violet;
+}
+
+td, tr, th{
+  /*border-style: solid;
+  border-color: black;
+  background-color: violet;*/
+  border: 1px solid black;
+}
+
+table{
+  border-color: violet;
+}
+
+tbody{
+  background-color: grey;
+}
+
+thead{
+  background-color: orange;
+}
+
+form{
+  white-space: pre-wrap;
+}

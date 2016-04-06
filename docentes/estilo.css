@@ -2,6 +2,11 @@ p {
   color:red;
 }
 
+/*p:first-letter{
+    background-color: #000000;
+    font-size:30px;
+}*/
+
 .classverde
 {
   color: green;
@@ -51,4 +56,41 @@ tbody{
 
 thead{
   background-color: orange;
+}
+
+a:link{
+  color: #FF0000;
+}
+
+a:visited{
+  color: #FF0000;
+}
+
+a:hover{
+  color: #FFFF00;
+}
+a:active{
+  color: #00FF00;
+}
+
+.classverde::selection{
+  background-color: #cccccc;
+  color: red;
+}
+
+p:first-letter{
+  color: orange;
+  font-size: 30px;
+}
+
+.botonera > p {
+  background-color: green;
+}
+
+#link-exactas ~ p{
+  background-color: white;
+}
+
+.link-interno{
+  background-color: red;
 }

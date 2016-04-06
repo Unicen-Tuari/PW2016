@@ -1,0 +1,17 @@
+body{
+   background-color:green;
+}
+.bloque2{
+  background-color:gray;
+  color: blue;
+  border-style: solid;
+}
+div a:link{
+  color: red;
+}
+div > p {
+background-color: yellow;
+}
+div.bloque2 + p {
+background-color: gray;
+}
