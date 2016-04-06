@@ -20,13 +20,13 @@ body {
   text-decoration: none;
 }
 .Tabla{
-  background-color: yellow;
+  background-color: #09928D;
   border-style: solid;
 }
 .Remarcador{
   font-style: italic;
   font-weight: bold;
-  color: black;
+  color: #09928D;
 }
 table{
   background-color: grey;

@@ -1,0 +1,17 @@
+.classAzul{
+  color: blue;
+}
+h2, li, p {
+  font-family: "Courier New", monospace;
+  color: white;
+  font-weight: bold;
+}
+div ul li{
+  color: red;
+}
+
+
+body{
+  background-image:url(fondo-celeste.jpg);
+  background-repeat:repeat;
+}
