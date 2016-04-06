@@ -2,7 +2,7 @@ p{
   color:black;
   }
 .classverde{
-  color:green;
+  color:blue;
 }
 body{
    background-color:green;
@@ -48,4 +48,24 @@ thead{
 table, th , td{
   border: 1px solid black;
   text-align: center;
+}
+p:first-letter{
+  color:orange;
+  font-size: 20px;
+}
+a:link{
+ color: black;
+}
+a:visited{
+ color: white;
+}
+a:hover{
+  background-color:blue;
+}
+a::selection{
+  color: red;
+}
+.classverde::selection{
+background-color: #cccccc;
+
 }
