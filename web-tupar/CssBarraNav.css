@@ -1,10 +1,10 @@
-#navlist li
-{
+#navlist li{
 display: inline;
 list-style-type: none;
 padding-right: 20px;
 text-decoration: none;
 }
+
 .ClassColor{
   color: red;
 }
