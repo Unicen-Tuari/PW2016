@@ -1,0 +1,10 @@
+h1,li{
+  color: blue;
+  font-style: italic;
+  font-size: 20px;
+  font-family: sans-serif;
+  }
+  li{
+    font-size: 10px;
+    list-style: circle;
+  }
