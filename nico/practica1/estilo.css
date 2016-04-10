@@ -1,9 +1,13 @@
-p{
+/*p{
   color:red;
-}
+}*/
 
 .verde {
   color: blue;
+}
+
+.greenselection::selection{
+  color:green;
 }
 
 body{
@@ -13,6 +17,37 @@ body{
 
 a:link{
   text-decoration: none;
+  color:orange;
+}
+
+
+a:visited{
+ background-color: orange;
+ color:orange;
+}
+
+a:hover{
+  font-size: 30px;
+}
+
+a::selection{
+  background-color: red;
+  color:red;
+}
+
+a:active{
+  color:red;
+  background-color: black;
+}
+
+p:first{
+  background-color: #101010;
+  color:yellow;
+}
+
+p::first-letter{
+  background-color: black;
+  color: red;
 }
 
 .Bloque1{
@@ -50,4 +85,8 @@ tbody{
 
 thead{
   background-color: orange;
+}
+
+form{
+  white-space: pre-wrap;
 }
