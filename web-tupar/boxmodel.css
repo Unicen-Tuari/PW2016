@@ -1,0 +1,30 @@
+div{
+background: red;
+border: 6px solid blue;
+padding:10px;
+margin:10px;
+--height: 10px;
+width: 40%;
+}
+
+.dentro{
+  background: white;
+  border: 6px solid black;
+  padding:8px;
+  margin:2px;
+  height: 18px;
+  min-width: 150px;
+
+}
+body{
+background: yellow;
+}
+
+.externo {
+position: inherit;
+background: green;
+}
+
+.flotar{
+float: left;
+}
