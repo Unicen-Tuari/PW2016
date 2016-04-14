@@ -1,0 +1,31 @@
+div {
+  background: red;
+  border: 6px solid blue;
+  margin: 20px;
+  padding: 20px;
+  width: 20%;
+  min-width: 200px;
+}
+
+body{
+  border: 1px solid blue;
+}
+
+.externo{
+  background: green;
+  margin-left: 10px;
+  position: relative;
+  height: 200px;
+}
+.interno{
+  position: fixed;
+  top: 120px;
+  background: yellow;
+  margin-left: 30px;
+}
+.flotar {
+  float:left;
+}
+.borrar{
+  clear:both;
+}
