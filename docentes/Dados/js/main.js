@@ -27,3 +27,15 @@ function TirarMuchosDados(cantTiradas) {
   for(var t = 0; t< cantTiradas;t++)
     TirarDados();
 }
+
+var interval;
+function Empezar()
+{
+  document.getElementById("empezar").disabled = true;
+  interval = setInterval("TirarDados()",500);
+}
+
+function Frenar(){
+  document.getElementById("empezar").disabled = false;
+  clearInterval(interval);
+}
