@@ -2,7 +2,7 @@
 */
 "use strict";
 
-var cuenta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];//variable donde guardar los resultados temporales
+var cuenta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];//variable donde guardar los resultados temporales
 
 function TirarDados() {
     //genera dos numeros al azar y cambia las fuentes de las imagenes
@@ -13,10 +13,10 @@ function TirarDados() {
     //calcular suma
     var sum = d1+d2;
     //contar la suma, tener en cuenta que el arreglo empieza en 0
-    cuenta[sum-1]++;
+    cuenta[sum-2]++;
     //concatenar las cantidad de veces que salio cada suma
     var cadena = "";
-    for(var c = 0; c<12; c++)
+    for(var c = 0; c<11; c++)
       cadena += ""+ cuenta[c] + " ";
     //mostrar en el html
     document.getElementById("resultado").innerHTML = cadena;
