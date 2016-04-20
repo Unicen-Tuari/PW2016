@@ -2,21 +2,34 @@
 */
 "use strict";
 
-var cuenta = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];//variable donde guardar los resultados temporales
+//variable donde guardar los resultados temporales
+var cuenta = [];
+
+var dados = document.getElementsByClassName("dado");
+for (var i = 0; i < dados.length*5+1; i++) {
+  cuenta[i] = 0;
+}
+
+function ValorDado()
+{
+  return Math.floor((Math.random() * 6) + 1);
+}
 
 function TirarDados() {
-    //genera dos numeros al azar y cambia las fuentes de las imagenes
-    var d1 = Math.floor((Math.random() * 6) + 1);
-    document.getElementById("dado1").src = "images/dado"+d1+".png";
-    var d2 = Math.floor((Math.random() * 6) + 1);
-    document.getElementById("dado2").src = "images/dado"+d2+".png";
+    var dados = document.getElementsByClassName("dado");
+    //genera numeros al azar y cambia las fuentes de las imagenes
     //calcular suma
-    var sum = d1+d2;
+    var sum = 0;
+    for (var d = 0; d < dados.length; d++) {
+      var valor = ValorDado();
+      sum += valor;
+      dados[d].src = "images/dado"+valor+".png";
+    }
     //contar la suma, tener en cuenta que el arreglo empieza en 0
-    cuenta[sum-2]++;
+    cuenta[sum-dados.length]++;
     //concatenar las cantidad de veces que salio cada suma
     var cadena = "";
-    for(var c = 0; c<11; c++)
+    for(var c = 0; c < dados.length*5+1; c++)
       cadena += ""+ cuenta[c] + " ";
     //mostrar en el html
     document.getElementById("resultado").innerHTML = cadena;
