@@ -2,3 +2,8 @@
   background-color: #DDDDFF;
   color: #000088;
 }
+.carousel-inner img {
+  width: 500px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
