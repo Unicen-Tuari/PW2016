@@ -2,6 +2,22 @@
 */
 "use strict";
 
+$(document).ready(function() {
+
+  $('#tirarMuchosDados').click(function(){
+    TirarMuchosDados(1000);
+  });
+
+  $('#tirarDados').click(function(){
+    TirarDados();
+  });
+
+  $('#empezar').click(Empezar);
+  
+  $('#frenar').click(Frenar);
+});
+
+
 function Dado(numCaras, numDado)
 {
   //var dado = {}; al llamar con new this={}
