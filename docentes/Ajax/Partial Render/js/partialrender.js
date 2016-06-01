@@ -1,4 +1,5 @@
 $("#btnCargar").on("click", handleClick);
+$("#ajaxContent").on("click",".js-comportamiento", borrar);
 
 function handleClick() {
     $("#ajaxContent").html("<h1>Loading 1</h1>");
@@ -11,15 +12,14 @@ function handleClick() {
             success: function (receivedData) {
               $("#ajaxContent").html(receivedData);
               //console.log("Lenght: "+ $(".js-comportamiento").length);
-              $(".js-comportamiento").on("click", handle2);
               $(".js-comportamiento").html("Borrar");
-
             },
             method: "GET"
           }
         );
   }
 
-function handle2 () {
+
+function borrar () {
   $("#ajaxContent").html("");
 }
