@@ -24,10 +24,11 @@ function guardarInformacion() {
 }
 
 function mostrarInfo(info) {
-  var information="";
+  var information="<table class='table'><thead><tr><th>Id</th><th>Grupo</th><th>Cosa</th></tr></thead><tbody>";
   for (var i = 0; i < info.length; i++) {
-    information+=info[i].group+" "+info[i].thing;
+    information+=crearFila(info[i]);
   }
+  information+="</tbody></table>";
   return information;
 }
 
@@ -45,6 +46,33 @@ function getInformationByGroup(){
       }
       $('#infoGroup').html(mostrarInfo(resultData.information));
       console.log(resultData.information[0].thing);
+    },
+    error:function(jqxml, status, errorThrown){
+      alert('Error!');
+      console.log(errorThrown);
+    }
+  });
+}
+
+function crearTablaInformacion(informacion){
+  return "<table><thead><tr><th>Id</th><th>Grupo</th><th>Cosa</th></tr></thead><tbody>"+crearFila(informacion)+"</tbody></table>";
+
+
+}
+function crearFila(informacion) {
+  return "<tr><td>"+informacion._id+"</td><td>"+informacion.group+"</td><td>"+informacion.thing+"</td></tr>";
+}
+
+function getInformationByItem() {
+  event.preventDefault();
+  var id=$('#itemid').val();
+  $.ajax({
+    url:"http://web-unicen.herokuapp.com/api/get/" + id,
+    method:"GET",
+    contentType: "application/json; charset=utf-8",
+    success: function(resultData){
+      $('#infoItem').html(crearTablaInformacion(resultData.information));
+      console.log(resultData);
     },
     error:function(jqxml, status, errorThrown){
       alert('Error!');
