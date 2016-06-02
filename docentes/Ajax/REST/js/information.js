@@ -1,3 +1,7 @@
+
+$("#infoGroup").hide();
+$("#infoItem").hide();
+
 function isValidJson(json){
   if (/^[\],:{}\s]*$/.test(json.replace(/\\["\\\/bfnrtu]/g, '@').
   replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']').
@@ -5,6 +9,26 @@ function isValidJson(json){
     return true;
   }
   return false;
+}
+
+function crearFila(informacion) {
+  var fila= $(document.createElement('tr'));
+  fila.append("<td>"+informacion._id+"</td>")
+  fila.append("<td>"+informacion.group+"</td>")
+  fila.append("<td>"+informacion.thing+"</td>")
+  return fila;
+}
+
+function mostrarInfo(donde, info) {
+  var tbody = $('#' + donde + ' tbody')
+  if(info.length == 0 || info[0] === undefined){
+    tbody.append('<td colspan="3">No hay información</td>');
+    return;
+  }
+  for (var i = 0; i < info.length; i++) {
+    tbody.append(crearFila(info[i]));
+  }
+
 }
 
 function guardarInformacion() {
@@ -37,15 +61,6 @@ function guardarInformacion() {
   }
 }
 
-function mostrarInfo(info) {
-  var information="<table class='table'><thead><tr><th>Id</th><th>Grupo</th><th>Cosa</th></tr></thead><tbody>";
-  for (var i = 0; i < info.length; i++) {
-    information+=crearFila(info[i]);
-  }
-  information+="</tbody></table>";
-  return information;
-}
-
 function getInformationByGroup(){
   event.preventDefault();
   var groupid=$('#groupid').val();
@@ -54,27 +69,14 @@ function getInformationByGroup(){
     method:"GET",
     contentType: "application/json; charset=utf-8",
     success: function(resultData){
-      if(resultData.information.length == 0){
-        $('#infoGroup').html("No hay info para este grupo");
-        return;
-      }
-      $('#infoGroup').html(mostrarInfo(resultData.information));
-      console.log(resultData.information[0].thing);
+      mostrarInfo('infoGroup',resultData.information);
+      $("#infoGroup").show();
     },
     error:function(jqxml, status, errorThrown){
       alert('Error!');
       console.log(errorThrown);
     }
   });
-}
-
-function crearTablaInformacion(informacion){
-  return "<table><thead><tr><th>Id</th><th>Grupo</th><th>Cosa</th></tr></thead><tbody>"+crearFila(informacion)+"</tbody></table>";
-
-
-}
-function crearFila(informacion) {
-  return "<tr><td>"+informacion._id+"</td><td>"+informacion.group+"</td><td>"+informacion.thing+"</td></tr>";
 }
 
 function getInformationByItem() {
@@ -85,9 +87,8 @@ function getInformationByItem() {
     method:"GET",
     contentType: "application/json; charset=utf-8",
     success: function(resultData){
-      $('#infoItem').html(crearTablaInformacion(resultData.information));
-      console.log(resultData);
-      console.log(JSON.parse(resultData.information.thing));
+      mostrarInfo('infoItem',[resultData.information]);
+      $("#infoItem").show();
     },
     error:function(jqxml, status, errorThrown){
       alert('Error!');
