@@ -1,6 +1,11 @@
+$( document ).ready(function() {
+  $("#infoGroup").hide();
+  $("#infoItem").hide();
+  $("#btnInfoGroup").on('click',getInformationByGroup);
+  $("#btnInfoItem").on('click',getInformationByItem);
+  $("#btnGuardarInfo").on('click',guardarInformacion);
+});
 
-$("#infoGroup").hide();
-$("#infoItem").hide();
 
 function isValidJson(json){
   if (/^[\],:{}\s]*$/.test(json.replace(/\\["\\\/bfnrtu]/g, '@').
