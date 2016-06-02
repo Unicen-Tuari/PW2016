@@ -52,11 +52,13 @@ function guardarInformacion() {
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify(info),
       success: function(resultData){
-        alert('Se guardo con exito!');
+        $('#guardarAlert').html('Se guardo con exito ID:'+resultData.information._id);
+        $('#guardarAlert').addClass('alert-success');
         console.log(resultData);
       },
       error:function(jqxml, status, errorThrown){
-        alert('Error!');
+        $('#guardarAlert').html('Error intente mas tarde');
+        $('#guardarAlert').addClass('alert-danger');
         console.log(errorThrown);
       }
     });
