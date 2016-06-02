@@ -1,26 +1,40 @@
+function isValidJson(json){
+  if (/^[\],:{}\s]*$/.test(json.replace(/\\["\\\/bfnrtu]/g, '@').
+  replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g, ']').
+  replace(/(?:^|:|,)(?:\s*\[)+/g, ''))) {
+    return true;
+  }
+  return false;
+}
+
 function guardarInformacion() {
   event.preventDefault();
   var grupo = $('#grupo').val();
   var informacion = $('#informacion').val();
-  var info = {
-   "group": grupo,
-   "thing": informacion
-  };
-  $.ajax({
-    url:"http://web-unicen.herokuapp.com/api/create",
-    method:"POST",
-    dataType: 'JSON',
-    contentType: "application/json; charset=utf-8",
-    data: JSON.stringify(info),
-    success: function(resultData){
-      alert('Se guardo con exito!');
-      console.log(resultData);
-    },
-    error:function(jqxml, status, errorThrown){
-      alert('Error!');
-      console.log(errorThrown);
-    }
-  });
+  if(isValidJson(informacion)) {
+    var info = {
+     "group": grupo,
+     "thing": informacion
+    };
+    $.ajax({
+      url:"http://web-unicen.herokuapp.com/api/create",
+      method:"POST",
+      dataType: 'JSON',
+      contentType: "application/json; charset=utf-8",
+      data: JSON.stringify(info),
+      success: function(resultData){
+        alert('Se guardo con exito!');
+        console.log(resultData);
+      },
+      error:function(jqxml, status, errorThrown){
+        alert('Error!');
+        console.log(errorThrown);
+      }
+    });
+  }
+  else{
+    alert('JSON es invalido');
+  }
 }
 
 function mostrarInfo(info) {
@@ -73,6 +87,7 @@ function getInformationByItem() {
     success: function(resultData){
       $('#infoItem').html(crearTablaInformacion(resultData.information));
       console.log(resultData);
+      console.log(JSON.parse(resultData.information.thing));
     },
     error:function(jqxml, status, errorThrown){
       alert('Error!');
