@@ -3,14 +3,14 @@
 	<div class="container">
 
 
-	<h1>Asistencias <small>{$materia["nombre"]}</small></h1>
+	<h1>Presentismo <small>{$materia["nombre"]}</small></h1>
 	<hr>
 	<form class="form-horizontal" method="post" action="index.php?action=carga_asistencias">
 		<input value="{$materia["id"]}" name="materia" style="display:none" />
 		<div class="form-group">
 	    <label for="inputDate" class="col-sm-2 control-label">Fecha</label>
 	    <div class="col-sm-10">
-	      <input type="text" class="form-control" id="inputDate" name="inputDate" placeholder="dd/mm/aaaa">
+	      <input type="text" class="form-control" id="inputDate" name="inputDate" placeholder="aaaa/mm/dd">
 	    </div>
 	  </div>
 		<div class="form-group">

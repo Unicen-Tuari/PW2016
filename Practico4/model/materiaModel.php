@@ -19,7 +19,7 @@
 			return $query->fetch(PDO::FETCH_ASSOC);
 		}
 
-		function getMateriaByAlumno($idAlumno){
+		function getMateriasByAlumno($idAlumno){
 			 //INNER JOIN Alumno_Materia am ON(a.id = am.id_alumno) INNER JOIN Materia m ON(m.id = am.id_materia)
 			 $query = $this->conn->prepare("SELECT id, nombre FROM Materia m INNER JOIN Alumno_Materia am ON(m.id = am.id_materia) WHERE am.id_alumno = ?");
 			 $query->execute(array($idAlumno));

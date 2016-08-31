@@ -20,7 +20,7 @@ class AlumnoController {
       $alumnos = $this->model->getAlumnos();
       $salida = array();
       foreach($alumnos as $alumno){
-        $alumno["Materias"] = $this->modelMateria->getMateriaByAlumno($alumno["id"]);
+        $alumno["Materias"] = $this->modelMateria->getMateriasByAlumno($alumno["id"]);
         array_push($salida,$alumno);
       }
       $this->view->mostrar($salida);
