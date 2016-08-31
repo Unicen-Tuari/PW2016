@@ -5,7 +5,7 @@
 
 	<h1>Presentismo <small>{$materia["nombre"]}</small></h1>
 	<hr>
-	<form class="form-horizontal" method="post" action="index.php?action=carga_asistencias">
+	<form id="form-asistencia" class="form-horizontal">
 		<input value="{$materia["id"]}" name="materia" style="display:none" />
 		<div class="form-group">
 	    <label for="inputDate" class="col-sm-2 control-label">Fecha</label>

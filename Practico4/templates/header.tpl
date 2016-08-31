@@ -14,16 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/site.css" rel="stylesheet">
-    <style>
-    body {
-      padding-top: 50px;
-    }
-    .starter-template {
-      padding: 40px 15px;
-      text-align: center;
-    }
-    </style>
+    <link href="assets/css/site.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
