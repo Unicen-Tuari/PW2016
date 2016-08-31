@@ -28,7 +28,7 @@
 		{
 			return $_SESSION["alumnos"];
 		}
-*/
+
 		function getAlumnosByMateria($materia)
 		{
 			$alumnos = array();
@@ -41,7 +41,7 @@
 			}
 			return $alumnos;
 		}
-/*
+
 		function getMateriaById($idMateria){
 			foreach($_SESSION["materias"] as $materia)
 			{

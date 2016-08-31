@@ -3,15 +3,14 @@
 var $handlerAsistencias = function asistenciasFormHandler(){
   $('#form-asistencia').on('submit',function(e){
       e.preventDefault();
+      var postData = $(this).serializeArray();
       $.ajax({
           url : 'index.php?action=carga_asistencias',
-          data : new FormData($(this)),
+          data : postData,
           type : 'POST',
           success : function(data){
-            alert(data);
-          },
-          processData: false,  // tell jQuery not to process the data
-          contentType: false   // tell jQuery not to set contentType
+            console.log(data);
+          }
       });
   });
 }
